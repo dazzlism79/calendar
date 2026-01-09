@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+/* * CSS 스타일 시트
+         * Tailwind 클래스를 제거하고 표준 CSS로 작성했습니다.
+         */
+:root {
+    --bg-color: #FDFBF7;
+    --text-main: #1f2937;
+    --text-sub: #6b7280;
+    --border-color: #e5e7eb;
+    --primary-color: #f59e0b;
+    /* Amber 500 */
+    --point-poetry: #be123c;
+    /* Rose 700 */
+    --bg-poetry: #ffe4e6;
+    /* Rose 100 */
+    --point-novel: #0f766e;
+    /* Teal 700 */
+    --bg-novel: #ccfbf1;
+    /* Teal 100 */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+/* 레이아웃 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+    .main-grid {
+        grid-template-columns: 8fr 4fr;
+    }
+}
+
+/* 헤더 */
+header {
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: #111827;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: serif;
+    /* 명조체 느낌 */
+}
+
+.logo-text p {
+    font-size: 0.75rem;
+    color: var(--text-sub);
+}
+
+/* 필터 버튼 */
+.filter-group {
+    background: #f3f4f6;
+    padding: 4px;
+    border-radius: 8px;
+    display: flex;
+    gap: 2px;
+}
+
+.filter-btn {
+    border: none;
+    background: transparent;
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--text-sub);
+    transition: all 0.2s;
+}
+
+.filter-btn.active {
+    background: white;
+    color: var(--text-main);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn[data-category="poetry"].active {
+    color: var(--point-poetry);
+    background: #fff1f2;
+}
+
+.filter-btn[data-category="novel"].active {
+    color: var(--point-novel);
+    background: #f0fdfa;
+}
+
+.timezone-info {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--text-sub);
+}
+
+/* 캘린더 영역 */
+.calendar-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-btn {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.nav-btn:hover {
+    background: #f9fafb;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #f9fafb;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.weekday {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-sub);
+}
+
+.weekday:first-child {
+    color: #e11d48;
+}
+
+/* 일요일 */
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day-cell {
+    min-height: 100px;
+    border-bottom: 1px solid #f3f4f6;
+    border-right: 1px solid #f3f4f6;
+    padding: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.day-cell:hover {
+    background-color: #f9fafb;
+}
+
+.day-cell.today {
+    background-color: #fffbeb;
+}
+
+/* Amber 50 */
+
+.date-num {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    border-radius: 50%;
+    margin-bottom: 4px;
+}
+
+.day-cell.today .date-num {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+/* 캘린더 내 이벤트 태그 */
+.event-tag {
+    display: block;
+    font-size: 11px;
+    padding: 2px 4px;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: opacity 0.2s;
+}
+
+.event-tag:hover {
+    opacity: 0.8;
+}
+
+.event-tag.poetry {
+    background: var(--bg-poetry);
+    color: var(--point-poetry);
+    border-color: #fecdd3;
+}
+
+.event-tag.novel {
+    background: var(--bg-novel);
+    color: var(--point-novel);
+    border-color: #99f6e4;
+}
+
+.event-tag.all {
+    background: #f1f5f9;
+    color: #334155;
+    border-color: #e2e8f0;
+}
+
+/* 사이드바 */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.list-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.list-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-family: serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.list-item {
+    padding-left: 16px;
+    border-left: 2px solid transparent;
+    margin-bottom: 16px;
+    position: relative;
+    transition: border-color 0.2s;
+}
+
+.list-item:hover {
+    border-color: var(--primary-color);
+}
+
+.list-item.poetry {
+    border-left-color: #fecdd3;
+}
+
+.list-item:hover.poetry {
+    border-left-color: var(--point-poetry);
+}
+
+.list-item.novel {
+    border-left-color: #99f6e4;
+}
+
+.list-item:hover.novel {
+    border-left-color: var(--point-novel);
+}
+
+.d-day-badge {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+.d-day-badge.poetry {
+    background: #fff1f2;
+    color: var(--point-poetry);
+}
+
+.d-day-badge.novel {
+    background: #f0fdfa;
+    color: var(--point-novel);
+}
+
+.item-title {
+    font-weight: 500;
+    color: var(--text-main);
+    display: block;
+    margin: 4px 0;
+}
+
+.item-organizer {
+    font-size: 0.875rem;
+    color: var(--text-sub);
+    margin-bottom: 4px;
+}
+
+.item-link {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.item-link:hover {
+    color: var(--text-main);
+}
+
+/* 메시지 박스 */
+.message-box {
+    background: #111827;
+    color: #d1d5db;
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    transition: background 0.2s;
+    position: relative;
+}
+
+.message-box:hover {
+    background: #1f2937;
+}
+
+.msg-title {
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.msg-content {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.msg-footer {
+    border-top: 1px solid #374151;
+    padding-top: 16px;
+    font-size: 0.75rem;
+    color: #6b7280;
+    display: flex;
+    justify-content: space-between;
+}
