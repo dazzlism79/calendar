@@ -19,7 +19,7 @@
                     { id: 10, title: "창비 청소년 문학상", organizer: "청소년 소설 원고지 500매 내외", date: "2026-04-30", link: "https://www.changbi.com/contest?type=2", category: "novel" },
                     { id: 11, title: "문학동네신인상", organizer: "시 5편 이상 | 소설 중단편(원고지 80~200매) 2편 | 평론 1편 이상", date: "2026-05-10", link: "https://munhak.com/contest/prize/4398", category: "all" },
                     { id: 12, title: "창비신인문학상", organizer: "시 5~10편 | 소설 단편(원고지 80매 내외) 2편 | 문학평론(원고지 80매 내외) 1편", date: "2026-05-29", link: "https://www.changbi.com/contest?type=2", category: "all" },
-                    { id: 13, title: "김수영 문학상", organizer: "시 50편 이상 | 신인 및 등단 10년 이내의 시인", date: "2026-05-31", link: "https://minumsa.minumsa.com/award/%EA%B9%80%EC%88%98%EC%98%81-%EB%AC%B8%ED%95%99%EC%83%81/", category: "poetry" },
+                    { id: 13, title: "김수영 문학상", organizer: "시 50편 이상 | 신인 및 등단 10년 이내의 시인", date: "2026-09-05", link: "https://minumsa.minumsa.com/award/%EA%B9%80%EC%88%98%EC%98%81-%EB%AC%B8%ED%95%99%EC%83%81/", category: "poetry" },
                    
                 ];
 
@@ -227,4 +227,5 @@
             } catch (error) {
                 console.error("Initialization error:", error);
             }
+
         });
