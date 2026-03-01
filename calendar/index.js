@@ -12,14 +12,20 @@
                     { id: 3, title: "계간 포지션 신인추천 ", organizer: "시 5편 이상 | position2013@naver.com", date: "2026-01-15", link: "#", category: "poetry" },
                     { id: 4, title: "창비스토리공모", organizer: "미완성 - 원고지 350매 이상 | 완성 - 500매 이상 (최대 1000매)", date: "2026-02-01", link: "https://www.changbi.com/contest?type=2", category: "novel" },
                     { id: 5, title: "민음사 오늘의 작가상", organizer: "원고지 500매 이상", date: "2026-02-28", link: "https://minumsa.minumsa.com/award/%ec%98%a4%eb%8a%98%ec%9d%98-%ec%9e%91%ea%b0%80%ec%83%81/", category: "novel" },
-                    { id: 6, title: "현대시 신인추천", organizer: "시 10편 이상 | 평론 원고지 60매 이상", date: "2026-03-06", link: "http://www.koreapoem.co.kr/", category: "poetry" },
-                    { id: 7, title: "문학과사회 신인문학상", organizer: "시 10편 이상 | 소설 단편(100매 내외) 2편 or 중편(250~300매) 1편 이상 | 평론 1편 이상", date: "2026-03-31", link: "https://moonji.com/literatureAward/newface", category: "all" },
-                    { id: 8, title: "현대문학 신인추천", organizer: "시 10편 이상 | 소설 단편(70매 내외) 2편 or 중편(200매 이상) 1편 | 평론 70매 1편", date: "2026-03-31", link: "https://www.hdmh.co.kr/front/monthlyBook/newFace", category: "all" },
-                    { id: 9, title: "넥서스 작가상", organizer: "장편소설 (원고지 600매~1200매) & 자유형식 응모작 소개서 (원고지 10매 내외)", date: "2026-03-31", link: "https://and.nexusbook.com/contest/submit_info.asp", category: "novel" },
-                    { id: 10, title: "창비 청소년 문학상", organizer: "청소년 소설 원고지 500매 내외", date: "2026-04-30", link: "https://www.changbi.com/contest?type=2", category: "novel" },
-                    { id: 11, title: "문학동네신인상", organizer: "시 5편 이상 | 소설 중단편(원고지 80~200매) 2편 | 평론 1편 이상", date: "2026-05-10", link: "https://munhak.com/contest/prize/4398", category: "all" },
-                    { id: 12, title: "창비신인문학상", organizer: "시 5~10편 | 소설 단편(원고지 80매 내외) 2편 | 문학평론(원고지 80매 내외) 1편", date: "2026-05-29", link: "https://www.changbi.com/contest?type=2", category: "all" },
-                    { id: 13, title: "김수영 문학상", organizer: "시 50편 이상 | 신인 및 등단 10년 이내의 시인", date: "2026-09-05", link: "https://minumsa.minumsa.com/award/%EA%B9%80%EC%88%98%EC%98%81-%EB%AC%B8%ED%95%99%EC%83%81/", category: "poetry" },
+                    { id: 6, title: "자음과모음 신인문학상", organizer: "시 10편 이상 | 중/단편소설 2편 (원고지 80~200매 내외) | 평론 원고지 70매 이상", date: "2026-02-28", link: "http://jamobook.com/competition-01/", category: "all" },
+                    { id: 7, title: "현대시 신인추천", organizer: "시 10편 이상 | 평론 원고지 60매 이상", date: "2026-03-06", link: "http://www.koreapoem.co.kr/", category: "poetry" },
+                    { id: 8, title: "문학과사회 신인문학상", organizer: "시 10편 이상 | 소설 단편(100매 내외) 2편 or 중편(250~300매) 1편 이상 | 평론 1편 이상", date: "2026-03-31", link: "https://moonji.com/literatureAward/newface", category: "all" },
+                    { id: 9, title: "현대문학 신인추천", organizer: "시 10편 이상 | 소설 단편(70매 내외) 2편 or 중편(200매 이상) 1편 | 평론 70매 1편", date: "2026-03-31", link: "https://www.hdmh.co.kr/front/monthlyBook/newFace", category: "all" },
+                    { id: 10, title: "넥서스 작가상", organizer: "장편소설 (원고지 600매~1200매) & 자유형식 응모작 소개서 (원고지 10매 내외)", date: "2026-03-31", link: "https://and.nexusbook.com/contest/submit_info.asp", category: "novel" },
+                    { id: 10, title: "한겨레 문학상", organizer: "장편소설 (원고지 800매 내외)", date: "2026-03-31", link: "https://www.hani.co.kr/arti/culture/book/1237741.html", category: "novel" },
+                    { id: 11, title: "창비 청소년 문학상", organizer: "청소년 소설 원고지 500매 내외", date: "2026-04-30", link: "https://www.changbi.com/contest?type=2", category: "novel" },
+                    { id: 12, title: "악스트 신인문학상", organizer: "시 5~10편 | 소설 단편(원고지 80매 내외) 2편", date: "2026-05-01", link: "https://blog.naver.com/ehbook/224192923341", category: "all" },
+                    { id: 12, title: "문학동네신인상", organizer: "시 5편 이상 | 소설 중단편(원고지 80~200매) 2편 | 평론 1편 이상", date: "2026-05-010", link: "https://munhak.com/contest/prize/4398", category: "all" },
+                    { id: 13, title: "창비신인문학상", organizer: "시 5~10편 | 소설 단편(원고지 80매 내외) 2편 | 문학평론(원고지 80매 내외) 1편", date: "2026-05-29", link: "https://www.changbi.com/contest?type=2", category: "all" },
+                    { id: 14, title: "문학동네 소설상", organizer: "장편소설(원고지 500매 이상 + 500자 내외 시놉시스 첨부)", date: "2026-07-31", link: "https://munhak.com/contest/prize/4396", category: "novel" },
+                    { id: 15, title: "김수영 문학상", organizer: "시 50편 이상 | 신인 및 등단 10년 이내의 시인", date: "2026-09-05", link: "https://minumsa.minumsa.com/award/%EA%B9%80%EC%88%98%EC%98%81-%EB%AC%B8%ED%95%99%EC%83%81/", category: "poetry" },
+                    { id: 16, title: "박지리 문학상", organizer: "단편소설 3편 (원고지 100매 이상) or 경장편소설 1편 (원고지 300매 내외)", date: "2026-10-31", link: "https://www.sakyejul.net/bbs/m/all_data_list.php?type=mcb&ep=ep993587793575e55ff04653&gp=all&menu=hm20570465925ddb7ffbc5360", category: "novel" },
+                    
                    
                 ];
 
